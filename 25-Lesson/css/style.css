@@ -1,0 +1,18 @@
+* {
+    font-family:  sans-serif;
+}
+
+
+.container {
+    max-width: 1000px;
+    /* min-width: 500px; */
+    padding: 25px;
+    height: auto;
+    background-color: brown;
+    color: white;
+}
+@media screen and (max-width: 500px) {
+    .container {
+        background-color: teal;
+    }
+}

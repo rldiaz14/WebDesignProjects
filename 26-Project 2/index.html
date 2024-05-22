@@ -33,6 +33,10 @@
     <!-- Main Header -->
     <!-- Main Menu -->
     <nav class="main-menu">
+        <ul class="mobile-menu">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#" class="toggler">+</a></li>
+        </ul>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a>
@@ -143,6 +147,11 @@
             slideMargin:0,
             loop:true
         });
+        $('.toggler').click(function() {
+            $('.main-menu > ul:nth-of-type(2)').toggle();
+            $('.drop').css({'display': 'block','position': 'relative'});
+        });
+
     });
 </script>
 </body>
